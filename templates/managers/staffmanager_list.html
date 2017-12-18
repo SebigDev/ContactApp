@@ -1,0 +1,14 @@
+{% extends 'layout/base.html' %}
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+{% block content %}
+{% for q in staff_manager %}
+    <div class="text-left text-info align-left col-lg-offset 4 panel-body">
+    Name : {{ q.manager_name.name }}<br>
+    Company: {{ q.company }}<br>
+    Current Level: {{ q.current_level }}<br>
+    Phone No: {{ q.phone_number }}<br>
+    </div>
+
+{% endfor %}
+{% endblock %}

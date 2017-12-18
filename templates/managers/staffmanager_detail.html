@@ -1,0 +1,11 @@
+{% extends 'layout/base.html' %}
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+{% block content %}
+ID : {{ manager.pk }}<br>
+Name : {{ manager.manager_name.name}}<br>
+Company : {{ manager.company}}<br>
+Level : {{ manager.current_level}}<br>
+Phone : {{ manager.phone_number}}<br>
+Is Staff : {{ manager.is_staff}}<br>
+{% endblock %}

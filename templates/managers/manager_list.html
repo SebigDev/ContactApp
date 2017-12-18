@@ -1,0 +1,10 @@
+{% extends 'layout/base.html' %}
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+{% block content %}
+{% for q in manager %}
+ <div class="panel-title">
+ <i class="fa fa-user-plus"></i> Name : {{ q.name }}
+ </div>
+{% endfor %}
+{% endblock %}

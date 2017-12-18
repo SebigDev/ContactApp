@@ -1,0 +1,10 @@
+{% extends 'layout/base.html' %}
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    {{ manager }}
+    <input type="submit" value="Delete">
+</form>
+{% endblock %}
